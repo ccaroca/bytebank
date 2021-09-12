@@ -14,20 +14,11 @@ export class NovaTransferenciaComponent {
 
   transferir() {
     console.log('transferir acionado');
-    if (this.ehValido()) {
-      const valorEmitir = { valor: this.valor, destino: this.destino };
-      this.aoTransferir.emit(valorEmitir);
-    }
+
+    const valorEmitir = { valor: this.valor, destino: this.destino };
+    this.aoTransferir.emit(valorEmitir);
 
     this.limparCampos();
-  }
-
-  private ehValido() {
-    const valido = this.valor > 0;
-    if (!valido) {
-      this.valoresComErro.emit('Informe um valor válido');
-    }
-    return valido;
   }
 
   limparCampos() {
