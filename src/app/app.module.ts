@@ -6,14 +6,9 @@ import { AppComponent } from './app.component';
 import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferencia.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NovaTransferenciaComponent
-  ],
-  imports: [
-    BrowserModule, FormsModule
-  ],
+  declarations: [AppComponent, NovaTransferenciaComponent],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
